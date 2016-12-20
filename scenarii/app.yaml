@@ -1,0 +1,17 @@
+application: myscenarii147919
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+handlers:
+
+- url: /
+  static_files: html/index-clean-video.html
+  upload: html/index-clean-video.html
+
+- url: /
+  static_dir: html
+
+- url: /html/scss
+  static_dir: html/scss
+  mime_type: text/scss
