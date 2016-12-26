@@ -1,0 +1,63 @@
+<div class="content padded">
+
+    <div class="row">
+
+        <div class="col-lg-3">
+
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <span class="pull-left"><a href="#" class="ajax-project-close btn btn-default btn-sm btn-pull-up"><i
+                        class="fa fa-times icon-before"></i>Закрыть</a></span>
+                <h6 class="pull-right text-muted short">Детали сценария</h6>
+            </div>
+
+            <div class="long">
+                <h2 class="short">Спящая красавица</h2>
+                <span class="text-muted">Сценарії для середнього і старшого шкільного віку</span>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <h5>Описание</h5>
+                    <p>Сценарий по мотивам традиционной европейской сказки
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5>Детали</h5>
+                    <p>Действующие лица: Фея Грация, Фея Совершенства, Королева, Король, Фея Доброта, Фея Танцовщица, Фея Песня, Фея Музыка, Фея Танца, Фея Восьмая, Фея Седьмая, Принцесса, Принц
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+        <div class="col-lg-9">
+            <iframe style="width: 100%" src="https://docs.google.com/presentation/d/165mVvFtlQHomrDc-IA3oZ6K7KDKR5e5qf9KG5rKesSc/edit?usp=sharing"
+                    frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
+        </div>
+
+    </div>
+
+</div>
+Scripts
+<script>
+    $(document).ready(function (){
+
+        // Ajax Project Close
+
+        function closeContent() {
+            $('.project-content').delay(100).slideUp(1000,function() { $('.project-loader').show(0); $('.project-loader .logo-loader').show(0); $.waypoints('refresh') });
+            $('html, body').animate({scrollTop:$('#portfolio').position().top },600);
+        }
+
+        $('.ajax-project-close').click(function() {
+            closeContent();
+        });
+
+    });
+</script>
